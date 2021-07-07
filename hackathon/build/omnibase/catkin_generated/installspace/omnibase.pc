@@ -1,0 +1,8 @@
+prefix=/home/student/ERC-hackathon/install
+
+Name: omnibase
+Description: Description of omnibase
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

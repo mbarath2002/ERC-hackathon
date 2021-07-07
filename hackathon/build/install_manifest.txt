@@ -1,0 +1,9 @@
+/home/student/ERC-hackathon/install/_setup_util.py
+/home/student/ERC-hackathon/install/env.sh
+/home/student/ERC-hackathon/install/setup.bash
+/home/student/ERC-hackathon/install/local_setup.bash
+/home/student/ERC-hackathon/install/setup.sh
+/home/student/ERC-hackathon/install/local_setup.sh
+/home/student/ERC-hackathon/install/setup.zsh
+/home/student/ERC-hackathon/install/local_setup.zsh
+/home/student/ERC-hackathon/install/.rosinstall
