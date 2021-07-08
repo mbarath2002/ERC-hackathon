@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/ERC-hackathon/src
+CMAKE_SOURCE_DIR = /home/student/ERC-hackathon/hackathon/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/ERC-hackathon/build
+CMAKE_BINARY_DIR = /home/student/ERC-hackathon/hackathon/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/student/ERC-hackathon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/ERC-hackathon/src /home/student/ERC-hackathon/src /home/student/ERC-hackathon/build /home/student/ERC-hackathon/build /home/student/ERC-hackathon/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/ERC-hackathon/hackathon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/ERC-hackathon/hackathon/src /home/student/ERC-hackathon/hackathon/src /home/student/ERC-hackathon/hackathon/build /home/student/ERC-hackathon/hackathon/build /home/student/ERC-hackathon/hackathon/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/ERC-hackathon/src/omnibase
+# Install script for directory: /home/student/ERC-hackathon/hackathon/src/omnibase
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/ERC-hackathon/install")
+  set(CMAKE_INSTALL_PREFIX "/home/student/ERC-hackathon/hackathon/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/ERC-hackathon/build/omnibase/catkin_generated/installspace/omnibase.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/ERC-hackathon/hackathon/build/omnibase/catkin_generated/installspace/omnibase.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/omnibase/cmake" TYPE FILE FILES
-    "/home/student/ERC-hackathon/build/omnibase/catkin_generated/installspace/omnibaseConfig.cmake"
-    "/home/student/ERC-hackathon/build/omnibase/catkin_generated/installspace/omnibaseConfig-version.cmake"
+    "/home/student/ERC-hackathon/hackathon/build/omnibase/catkin_generated/installspace/omnibaseConfig.cmake"
+    "/home/student/ERC-hackathon/hackathon/build/omnibase/catkin_generated/installspace/omnibaseConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/omnibase" TYPE FILE FILES "/home/student/ERC-hackathon/src/omnibase/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/omnibase" TYPE FILE FILES "/home/student/ERC-hackathon/hackathon/src/omnibase/package.xml")
 endif()
 

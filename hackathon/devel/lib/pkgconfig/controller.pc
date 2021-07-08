@@ -1,4 +1,4 @@
-prefix=/home/student/ERC-hackathon/devel
+prefix=/home/student/ERC-hackathon/hackathon/devel
 
 Name: controller
 Description: Description of controller

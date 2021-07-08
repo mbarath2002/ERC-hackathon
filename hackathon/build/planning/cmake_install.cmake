@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/ERC-hackathon/src/planning
+# Install script for directory: /home/student/ERC-hackathon/hackathon/src/planning
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/ERC-hackathon/install")
+  set(CMAKE_INSTALL_PREFIX "/home/student/ERC-hackathon/hackathon/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/ERC-hackathon/build/planning/catkin_generated/installspace/planning.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/ERC-hackathon/hackathon/build/planning/catkin_generated/installspace/planning.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/planning/cmake" TYPE FILE FILES
-    "/home/student/ERC-hackathon/build/planning/catkin_generated/installspace/planningConfig.cmake"
-    "/home/student/ERC-hackathon/build/planning/catkin_generated/installspace/planningConfig-version.cmake"
+    "/home/student/ERC-hackathon/hackathon/build/planning/catkin_generated/installspace/planningConfig.cmake"
+    "/home/student/ERC-hackathon/hackathon/build/planning/catkin_generated/installspace/planningConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/planning" TYPE FILE FILES "/home/student/ERC-hackathon/src/planning/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/planning" TYPE FILE FILES "/home/student/ERC-hackathon/hackathon/src/planning/package.xml")
 endif()
 

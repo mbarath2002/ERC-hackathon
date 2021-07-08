@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/ERC-hackathon/src
+CMAKE_SOURCE_DIR = /home/student/ERC-hackathon/hackathon/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/ERC-hackathon/build
+CMAKE_BINARY_DIR = /home/student/ERC-hackathon/hackathon/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ controller/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_exp
 .PHONY : controller/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 controller/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/student/ERC-hackathon/build/controller && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/student/ERC-hackathon/hackathon/build/controller && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : controller/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 controller/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/student/ERC-hackathon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/ERC-hackathon/src /home/student/ERC-hackathon/src/controller /home/student/ERC-hackathon/build /home/student/ERC-hackathon/build/controller /home/student/ERC-hackathon/build/controller/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/ERC-hackathon/hackathon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/ERC-hackathon/hackathon/src /home/student/ERC-hackathon/hackathon/src/controller /home/student/ERC-hackathon/hackathon/build /home/student/ERC-hackathon/hackathon/build/controller /home/student/ERC-hackathon/hackathon/build/controller/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : controller/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

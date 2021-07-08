@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/ERC-hackathon/src/obstacles
+# Install script for directory: /home/student/ERC-hackathon/hackathon/src/obstacles
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/ERC-hackathon/install")
+  set(CMAKE_INSTALL_PREFIX "/home/student/ERC-hackathon/hackathon/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/ERC-hackathon/build/obstacles/catkin_generated/installspace/obstacles.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/student/ERC-hackathon/hackathon/build/obstacles/catkin_generated/installspace/obstacles.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/obstacles/cmake" TYPE FILE FILES
-    "/home/student/ERC-hackathon/build/obstacles/catkin_generated/installspace/obstaclesConfig.cmake"
-    "/home/student/ERC-hackathon/build/obstacles/catkin_generated/installspace/obstaclesConfig-version.cmake"
+    "/home/student/ERC-hackathon/hackathon/build/obstacles/catkin_generated/installspace/obstaclesConfig.cmake"
+    "/home/student/ERC-hackathon/hackathon/build/obstacles/catkin_generated/installspace/obstaclesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/obstacles" TYPE FILE FILES "/home/student/ERC-hackathon/src/obstacles/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/obstacles" TYPE FILE FILES "/home/student/ERC-hackathon/hackathon/src/obstacles/package.xml")
 endif()
 
