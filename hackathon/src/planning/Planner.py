@@ -1,8 +1,13 @@
 import matplotlib.pyplot as p
 import math
 import random
+import rospy
+from planning.msg import array
 from shapely.geometry import Point, Polygon
 from shapely.geometry import LineString
+rospy.init_node('Planner')
+pub=rospy.Publisher('path',array)
+rate=rospy.Rate(2)
 class Node(object):
     def __init__(self, node):
         self.node=node
@@ -72,6 +77,7 @@ def RRT(start,goal,x1,y1):
                 path.append(stack[end].node)
                 end=stack[end].parent
             path.append(start)
+            path.reverse()
             return path
 
 def visualize(path,start,goal,x1,y1):
@@ -97,5 +103,8 @@ def main():
     
 if __name__ == '__main__':
     main()
+    while not rospy.is_shutdown():
+        pub.publish(path)
+        rate.sleep()
 
 p.show()
