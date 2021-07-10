@@ -2,12 +2,12 @@ import matplotlib.pyplot as p
 import math
 import random
 import rospy
-from planning.msg import array
+from planner.msg import array
 from shapely.geometry import Point, Polygon
 from shapely.geometry import LineString
-rospy.init_node('Planner')
-pub=rospy.Publisher('path',array)
-rate=rospy.Rate(2)
+from obstacles.msg import coords
+
+
 class Node(object):
     def __init__(self, node):
         self.node=node
@@ -20,8 +20,6 @@ def RRT(start,goal,x1,y1):
     n=400.0
     s=Node(start)
     stack=[s]
-    p.scatter(start[0],start[1],color='r',s=5)
-    p.scatter(goal[0],goal[1],color='r',s=5)
     
     while True:
         flag=0
@@ -45,14 +43,12 @@ def RRT(start,goal,x1,y1):
             if(Point(x1[i],y1[i]).distance(point)<=0.25):
                 flag=1
                 break
-        print("hello")
         if(flag==1):
             continue
         for i in range(0,15):
             if(Point(x1[i],y1[i]).distance(line)<=0.25):
                 flag=1
                 break
-        print("world")
         if(flag==1):
             continue
         for i in range(0,15):
@@ -61,8 +57,6 @@ def RRT(start,goal,x1,y1):
                 break
             else:
                 key=1
-        p.scatter(new_node_x,new_node_y,color='r',s=5)
-        p.plot((nearest_node.node[0],new_node_x),(nearest_node.node[1],new_node_y),color='r')
         obj=Node(new_node)
         obj.parent=min_pos
         stack.append(obj)
@@ -80,31 +74,23 @@ def RRT(start,goal,x1,y1):
             path.reverse()
             return path
 
-def visualize(path,start,goal,x1,y1):
-    figure, axes = p.subplots()
-    for i in range(0,15):
-        circle= p.Circle((x1[i],y1[i]),0.25,fill=False)
-        axes.add_artist(circle)
-    i=len(path)-1
-    p.scatter(start[0],start[1],color='r',s=5)
-    p.scatter(goal[0],goal[1],color='r',s=5)
-    while(i>0):
-        p.plot((path[i][0],path[i-1][0]),(path[i][1],path[i-1][1]),color='g')
-        i=i-1
-
 def main():
     print("Start")
+    
+def callback(msg):
     start = (0.0,0.0)
     goal = (6,6)
-    x1=(0.0,0.0,0.0,1.5,1.5,1.5,1.5,3.0,3.0,3.0,3.0,4.5,4.5,4.5,4.5)
-    y1=(1.5,3.0,4.5,0.0,1.5,3.0,4.5,0.0,1.5,3.0,4.5,0.0,1.5,3.0,4.5)
+    main()
+    x1=msg.x
+    y1=msg.y
     path = RRT(start,goal,x1,y1)
-    visualize(path,start,goal,x1,y1)
+    
     
 if __name__ == '__main__':
-    main()
+    rospy.init_node('planner')
     while not rospy.is_shutdown():
+        sub=rospy.Subscriber('obstacles',coords,callback)
+        pub=rospy.Publisher('path',array)
+        rate=rospy.Rate(2)
         pub.publish(path)
         rate.sleep()
-
-p.show()
