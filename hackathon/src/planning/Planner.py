@@ -79,7 +79,6 @@ def RRT(start,goal,x1,y1):
 def callback(msg):
     start = (0.0,0.0)
     goal = (6,6)
-    main()
     x1=msg.x
     y1=msg.y
     path = RRT(start,goal,x1,y1)
