@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import matplotlib.pyplot as p
 import math
 import random
