@@ -6,6 +6,8 @@ from planning.msg import array
 from shapely.geometry import Point, Polygon
 from shapely.geometry import LineString
 from obstacles.msg import coords
+rospy.init_node('Planner')
+pub=rospy.Publisher('path',array)
 
 
 class Node(object):
@@ -73,9 +75,6 @@ def RRT(start,goal,x1,y1):
             path.append(start)
             path.reverse()
             return path
-
-def main():
-    print("Start")
     
 def callback(msg):
     start = (0.0,0.0)
@@ -84,13 +83,10 @@ def callback(msg):
     x1=msg.x
     y1=msg.y
     path = RRT(start,goal,x1,y1)
-    
+    pub.publish(path)
     
 if __name__ == '__main__':
-    rospy.init_node('Planner')
     while not rospy.is_shutdown():
         sub=rospy.Subscriber('obstacles',coords,callback)
-        pub=rospy.Publisher('path',array)
         rate=rospy.Rate(2)
-        pub.publish(path)
         rate.sleep()
