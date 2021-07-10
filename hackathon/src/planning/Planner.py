@@ -87,6 +87,6 @@ def callback(msg):
     
 if __name__ == '__main__':
     while not rospy.is_shutdown():
-        sub=rospy.Subscriber('obstacles',coords,callback)
+        sub=rospy.Subscriber('coordinates',coords,callback)
         rate=rospy.Rate(2)
         rate.sleep()
