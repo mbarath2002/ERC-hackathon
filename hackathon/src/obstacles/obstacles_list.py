@@ -13,7 +13,7 @@ while not rospy.is_shutdown():
     msg = coords()
     msg.x = [0,0,0,1.5,1.5,1.5,1.5,3.0,3.0,3.0,3.0,4.5,4.5,4.5,4.5]
     msg.y = [1.5, 3.0, 4.5, 0, 1.5, 3.0, 4.5, 0, 1.5, 3.0, 4.5, 0, 1.5, 3.0, 4.5]
-    
+    print(msg.data)
     pub.publish(msg)
     rate.sleep()
 
