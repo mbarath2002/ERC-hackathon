@@ -1,2 +1,2 @@
-controller:obstacles:omnibase:planning
+obstacles:omnibase_control:omnibase_description:omnibase_gazebo:planning
 -DCATKIN_DEVEL_PREFIX=/home/student/ERC-hackathon/hackathon/devel -DCMAKE_INSTALL_PREFIX=/home/student/ERC-hackathon/hackathon/install -G Unix Makefiles

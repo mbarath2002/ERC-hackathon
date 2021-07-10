@@ -131,10 +131,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/student/ERC-hackathon/hackathon/build/gtest/cmake_install.cmake")
-  include("/home/student/ERC-hackathon/hackathon/build/controller/cmake_install.cmake")
   include("/home/student/ERC-hackathon/hackathon/build/obstacles/cmake_install.cmake")
-  include("/home/student/ERC-hackathon/hackathon/build/omnibase/cmake_install.cmake")
   include("/home/student/ERC-hackathon/hackathon/build/planning/cmake_install.cmake")
+  include("/home/student/ERC-hackathon/hackathon/build/omnibase_description/cmake_install.cmake")
+  include("/home/student/ERC-hackathon/hackathon/build/omnibase_control/cmake_install.cmake")
+  include("/home/student/ERC-hackathon/hackathon/build/omnibase_gazebo/cmake_install.cmake")
 
 endif()
 

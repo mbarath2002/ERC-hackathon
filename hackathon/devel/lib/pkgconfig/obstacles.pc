@@ -3,6 +3,6 @@ prefix=/home/student/ERC-hackathon/hackathon/devel
 Name: obstacles
 Description: Description of obstacles
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/student/ERC-hackathon/hackathon/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_runtime

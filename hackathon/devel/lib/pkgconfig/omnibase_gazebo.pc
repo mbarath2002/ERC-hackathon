@@ -1,0 +1,8 @@
+prefix=/home/student/ERC-hackathon/hackathon/devel
+
+Name: omnibase_gazebo
+Description: Description of omnibase_gazebo
+Version: 1.0.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp sensor_msgs std_msgs

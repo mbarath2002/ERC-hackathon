@@ -1,0 +1,8 @@
+prefix=/home/student/ERC-hackathon/hackathon/devel
+
+Name: omnibase_control
+Description: Description of omnibase_control
+Version: 1.0.2
+Cflags: -I/home/student/ERC-hackathon/hackathon/src/omnibase_control/include
+Libs: -L${prefix}/lib 
+Requires: roscpp geometry_msgs nav_msgs rospy std_msgs tf2_ros
