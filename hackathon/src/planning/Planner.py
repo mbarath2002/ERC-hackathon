@@ -2,7 +2,7 @@ import matplotlib.pyplot as p
 import math
 import random
 import rospy
-from planner.msg import array
+from planning.msg import array
 from shapely.geometry import Point, Polygon
 from shapely.geometry import LineString
 from obstacles.msg import coords
@@ -87,7 +87,7 @@ def callback(msg):
     
     
 if __name__ == '__main__':
-    rospy.init_node('planner')
+    rospy.init_node('Planner')
     while not rospy.is_shutdown():
         sub=rospy.Subscriber('obstacles',coords,callback)
         pub=rospy.Publisher('path',array)
